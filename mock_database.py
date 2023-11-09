@@ -23,7 +23,10 @@ dados = {
 
 df = pd.DataFrame(dados)
 
-db_url = 'postgresql://postgres:12345@localhost/tangerino1'
+#BANCOS UTILIZADOS NO DESENVOLVIMENTO
+#db_url_src = 'postgresql://postgres:senhasourcedb@18.226.52.33:10000/postgres'
+
+db_url = 'postgresql://postgres:senhasourcedb@localhost:10000/postgres'
 engine =  create_engine(db_url)
 
 df.to_sql('t_ponto', engine, index=False,if_exists='replace')
