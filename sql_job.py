@@ -2,11 +2,11 @@ import pandas as pd
 from sqlalchemy import create_engine
 
 db_url_src = 'postgresql://postgres:senhasourcedb@localhost:10000/postgres'
-db_url_dsc = 'postgresql://postgres:senhasourcedb@localhost:11000/postgres'
+db_url_dsc = 'postgresql://postgres:senhatargetdb@localhost:11000/postgres'
 
 #BANCOS UTILIZADOS NO DESENVOLVIMENTO
 #db_url_src = 'postgresql://postgres:senhasourcedb@18.226.52.33:10000/postgres'
-#db_url_dsc = 'postgresql://postgres:senhasourcedb@18.226.52.33:11000/postgres'
+#db_url_dsc = 'postgresql://postgres:senhatargetdb@18.226.52.33:11000/postgres'
 #
 
 engine_src = create_engine(db_url_src)
