@@ -1,15 +1,18 @@
-# desafio_tangerino
+# Desafio Tangerino
 Segue a minha resolução do case para a vaga de Administrador de Banco de Dados.
 
-### Proposta
-Segue proposta:
+### Requisitos
+- Python 3.12
+- Docker
 
-- Realizar a migração dos dados entre SOURCE e TARGET
-- Utilizar Docker no Projeto
-- Python com alguma forma de agendamento
-- Enviar um relatório sumarizando os itens.
-  - Quantidade de pontos por usuário
-  - Quantidade de pontos por empresa
-  - 10 Usuários com mais pontos
-  - Média de marcações 
+### Instruções
+- Abrir o terminal na pasta do projeto
+- criação do ambiente virtual: `python -m venv venv`
+- ativar o venv: `.\venv\Scripts\activate`
+- instalar dependências: `pip install -r requirements.txt`
+- inicar docker: `docker compose up -d`
+- criação dos dados mockados: `python mock_database.py`
+- execução do etl: `python sql_job.py`
 
+### Respostas
+- As respostas apareceção no terminal com a execão do sql_job.py
